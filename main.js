@@ -3,13 +3,14 @@ options = ["As I see it, yes.", " Ask again later.", "Better not tell you now.",
 
 function choose(){
 	var eightballA = document.getElementById("eightballA");
-	eightballA.id = "eightballB";
+    eightballA.id = 'eightballB'
 
 	var choice = Math.floor(Math.random() * 20);
 	
-    	var randomChoice = options[choice];
+    var randomChoice = options[choice];
 
-	var result = document.getElementById("eightballB").append(randomChoice);
+    var result = document.getElementById("result");
+    result.innerHTML = (randomChoice);
 }
 
 function restart(){
