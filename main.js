@@ -9,7 +9,7 @@ function choose(){
 	
     	var randomChoice = options[choice];
 
-	var result = document.getElementById("eightballB").innerHTML = randomChoice;
+	var result = document.getElementById("eightballB").append(randomChoice);
 }
 
 function restart(){
