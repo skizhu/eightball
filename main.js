@@ -6,11 +6,10 @@ function choose(){
 	eightballA.id = "eightballB";
 
 	var choice = Math.floor(Math.random() * 20);
-    var randomChoice = options[choice];
+	
+    	var randomChoice = options[choice];
 
-    console.log(options[19]);
-
-	var result = document.getElementById("eightballB").append(randomChoice);
+	var result = document.getElementById("eightballB").innerHTML = randomChoice;
 }
 
 function restart(){
