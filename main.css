@@ -6,27 +6,37 @@ body{
 
 .inputBar{
 	transition: 0.5s;
-	margin:3px;
-	text-align: center;
+    margin:3px;
+    margin-bottom:10px;
+    text-align: center;
 }
-
-.inputBar:hover{
-	transition: 0.5s;
-	margin:10px;
+#inputBar{
+    text-align: center;
+    font-size:30px;
+    padding:2px 2px 2px 2px;
 }
 
 #eightballA{
-	height: 300px;
-	width: 300px;
+	height: 600px;
+	width: 600px;
 	border-radius: 50%;
 	background-color: #000;
 	border:2px solid #192329;
-	cursor:pointer;
+    cursor:pointer;
+    transition:0.2s;
 }
 
 #eightballA:hover{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+}
+#eightballB{
+    height: 600px;
+	width: 600px;
+	border-radius: 50%;
+    background-color: #000;
+    border:2px solid #192329;
+    transition:0.2s;
 }
 
 @keyframes shake {
@@ -43,18 +53,11 @@ body{
   100% { transform: translate(1px, 0px) ; }
 }
 
-#eightballB{
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-color: #000;
-	border:2px solid #192329;
-}
-
 #result{
-	font-size: 20px;
+	font-size: 30px;
 	margin:140px;
-	text-align: center;
+    text-align: center;
+    margin-top:45%;
 }
 
 .goAgain{
